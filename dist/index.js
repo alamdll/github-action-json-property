@@ -971,7 +971,7 @@ function run() {
         try {
             const buffer = yield readFileAsync(path);
             const json = JSON.parse(buffer.toString());
-            if (prop && property) {
+            if (prop.length === 0 && property) {
                 throw new Error("input can't be multiple prop");
             }
             let nestedProp;

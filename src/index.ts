@@ -18,7 +18,7 @@ async function run() {
     const buffer = await readFileAsync(path);
     const json = JSON.parse(buffer.toString());
 
-    if (prop && property) {
+    if (prop.length === 0 && property) {
       throw new Error("input can't be multiple prop");
     }
 
