@@ -6,6 +6,8 @@ inputs:
     description: 'path to json file'
   prop_path:
     description: 'dot separated property key (e.g.: scripts.build)'
+  property:
+    description: 'any json verified property (e.g.: bla.dfadf@gmail.com)'
 runs:
   using: 'node12'
   main: 'dist/index.js'
